@@ -7,11 +7,11 @@ var url = document.URL;
 
 console.log(`url: ${url}`);
 
-const firstDiv = document.querySelector('div');
+if (url.match(/.*cnn.com.*/) !== null) {
 
-let textNode = document.createTextNode(url);
-
-firstDiv.appendChild(textNode);
-
-
-window.location = 'https://www.cnn.com';
+    window.location = 'https://www.freefrommentalslavery.com';
+}
+else {
+    //window.location = 'https://www.google.com';
+    console.log('did not match cnn');
+}
